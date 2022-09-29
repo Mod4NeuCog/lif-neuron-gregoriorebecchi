@@ -1,0 +1,85 @@
+1st exercise: 
+
+Input: no input
+Output: no output 
+Function: neuron_increase(): 
+-->neuron changes its membrane potential value
+
+MainProgram Spike_without_inputs ()
+	Declaration initial_potential (floating.point, -70)
+			
+Start
+initial_potential+=10
+End
+
+
+2nd exercise
+
+Input: membrane_potential_increase (floating.point, from command line)
+output: no output
+
+Function: neuron_spike(): 
+-->neuron passes its threshold value and inverts its membrane potential which becomes positive
+
+MainProgram Spike_keyboard_input ()
+	Declaration threshold_value (floating.point, -55)
+			initial_potential (floating.point, -70)
+			spike_value (boolean, FALSE)
+			membrane_potential_increase (floating.point, 0)
+Start
+membrane_potential_increase = float(input('Enter your input current (in mV):'))
+initial_potential+=membrane_potential_increase
+if (initial_potential>thershold_value)
+	spike_value = TRUE 
+else
+	spike_value= FASLE
+End
+
+3rd exercise
+
+Input: no input
+output: spike
+
+Function: neuron_spike(): 
+-->neuron passes its threshold value and inverts its membrane potential which becomes positive
+
+MainProgram Spike_commandline_input (membrane_potential_increase)
+	Declaration threshold_value (floating.point, -55)
+			initial_potential (floating.point, -70)
+			spike_value (boolean, FALSE)
+			
+Start
+initial_potential+=10
+if (initial_potential>thershold_value)
+	spike_value = TRUE 
+	print ('Neuron spiked')
+else
+	spike_value= FALSE
+	print ('Neuron did not spike')
+End
+
+
+4th exercise
+
+Input: membrane_potential_increase (floating.point, from command line)
+output: spike
+
+Function: neuron_spike(): 
+-->neuron passes its threshold value and inverts its membrane potential which becomes positive
+
+MainProgram Spike_commandline_input (membrane_potential_increase)
+	Declaration threshold_value (floating.point, -55)
+			initial_potential (floating.point, -70)
+			spike_value (boolean, FALSE)
+			
+Start
+membrane_potential_increase = float(input('Enter the increase/decrease of membrane potential: '))
+initial_potential+=membrane_potential_increase
+if (initial_potential>thershold_value)
+	spike_value = TRUE 
+	print ('Neuron spiked')
+else
+	spike_value= FALSE
+	print ('Neuron did not spike')
+
+End
